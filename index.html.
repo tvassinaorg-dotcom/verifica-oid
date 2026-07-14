@@ -269,7 +269,7 @@ Tenho +18
 
 <button class="exit"
 
-onclick="history.back()">
+onclick="window.location.href='https://telegram.me/+nRllUPqTH49lZDJh'">
 
 Sair
 
