@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Conteúdo Restrito</title>
+
+<style>
+
+body{
+    margin:0;
+    background:#0d0d0d;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    font-family:Arial;
+    color:white;
+}
+
+.box{
+    width:360px;
+    background:#181818;
+    border-radius:20px;
+    padding:35px;
+    text-align:center;
+}
+
+.icon{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+h1{
+    margin:10px 0;
+}
+
+p{
+    color:#9d9d9d;
+    line-height:25px;
+}
+
+.btns{
+    display:flex;
+    gap:15px;
+    margin-top:30px;
+}
+
+button{
+    flex:1;
+    height:55px;
+    border:none;
+    border-radius:15px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.ok{
+    background:#19d35d;
+    color:white;
+    font-weight:bold;
+}
+
+.exit{
+    background:#2d2d2d;
+    color:#999;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<div class="icon">⚠️</div>
+
+<h1>Conteúdo Restrito</h1>
+
+<p>
+Este conteúdo é destinado exclusivamente para maiores de 18 anos.
+Ao continuar, você confirma ter idade legal.
+</p>
+
+<div class="btns">
+
+<button class="ok"
+onclick="window.location='https://t.me/SEUGRUPO';">
+
+Tenho +18
+
+</button>
+
+<button class="exit"
+onclick="window.location='https://google.com';">
+
+Sair
+
+</button>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
