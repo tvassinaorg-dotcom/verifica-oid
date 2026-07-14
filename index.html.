@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Conteúdo Restrito</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+
+background:
+radial-gradient(circle at top,#1a1a1a,#0d0d0d 60%);
+
+overflow:hidden;
+
+}
+
+.card{
+
+width:92%;
+max-width:430px;
+
+background:#181818;
+
+border-radius:28px;
+
+padding:38px;
+
+text-align:center;
+
+border:1px solid rgba(255,255,255,.05);
+
+box-shadow:
+0 20px 80px rgba(0,0,0,.55);
+
+animation:card .6s ease;
+
+}
+
+@keyframes card{
+
+from{
+opacity:0;
+transform:translateY(40px) scale(.95);
+}
+
+to{
+
+opacity:1;
+transform:translateY(0) scale(1);
+
+}
+
+}
+
+.icon{
+
+width:74px;
+height:74px;
+
+margin:auto;
+
+background:#2b2512;
+
+border-radius:20px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:38px;
+
+color:#FFD84C;
+
+}
+
+h1{
+
+margin-top:26px;
+
+font-size:36px;
+font-weight:700;
+
+color:white;
+
+}
+
+p{
+
+margin-top:18px;
+
+color:#8c8c8c;
+
+line-height:30px;
+
+font-size:18px;
+
+}
+
+.buttons{
+
+margin-top:38px;
+
+display:flex;
+gap:16px;
+
+}
+
+button{
+
+height:60px;
+
+border:none;
+
+flex:1;
+
+border-radius:18px;
+
+font-size:18px;
+
+font-weight:700;
+
+cursor:pointer;
+
+transition:.25s;
+
+}
+
+.ok{
+
+background:#20d462;
+
+color:white;
+
+box-shadow:
+0 0 30px rgba(32,212,98,.55);
+
+animation:glow 2s infinite;
+
+}
+
+@keyframes glow{
+
+0%{
+box-shadow:0 0 10px rgba(32,212,98,.25);
+}
+
+50%{
+box-shadow:0 0 35px rgba(32,212,98,.8);
+}
+
+100%{
+box-shadow:0 0 10px rgba(32,212,98,.25);
+}
+
+}
+
+.ok:hover{
+
+transform:translateY(-2px);
+
+}
+
+.exit{
+
+background:#2b2b2b;
+
+color:#a0a0a0;
+
+}
+
+.exit:hover{
+
+background:#353535;
+
+}
+
+.footer{
+
+margin-top:28px;
+
+font-size:12px;
+
+letter-spacing:2px;
+
+color:#555;
+
+text-transform:uppercase;
+
+}
+
+@media(max-width:450px){
+
+h1{
+
+font-size:30px;
+
+}
+
+p{
+
+font-size:16px;
+
+line-height:26px;
+
+}
+
+button{
+
+height:56px;
+
+font-size:17px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="icon">
+
+⚠️
+
+</div>
+
+<h1>Conteúdo Restrito</h1>
+
+<p>
+
+Este conteúdo é destinado exclusivamente para maiores de 18 anos.
+
+Ao continuar, você confirma possuir idade legal.
+
+</p>
+
+<div class="buttons">
+
+<button class="ok"
+
+onclick="window.location.href='https://t.me/SEUGRUPO'">
+
+Tenho +18
+
+</button>
+
+<button class="exit"
+
+onclick="history.back()">
+
+Sair
+
+</button>
+
+</div>
+
+<div class="footer">
+
+VERIFICAÇÃO OBRIGATÓRIA
+
+</div>
+
+</div>
+
+</body>
+
+</html>
